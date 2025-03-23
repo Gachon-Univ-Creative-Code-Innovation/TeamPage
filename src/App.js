@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route, useLocation, Link } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import { TeamPage } from "./components/TeamPage";
+import { MemberDetail } from "./components/Memberdetail";
+import { ProjectDetail } from "./components/ProjectDetail";
+import rectangle4 from "./assets/pic1.png";
+import "./App.css";
 
 function App() {
+  const location = useLocation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="global-fixed-header">
+        <Link to="/">
+          <img src={rectangle4} alt="logo" className="rectangle" />
+        </Link>
+      </div>
+
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<TeamPage />} />
+          <Route path="/member/:id" element={<MemberDetail />} />
+          <Route path="/project" element={<ProjectDetail />} />
+        </Routes>
+      </AnimatePresence>
+    </>
   );
 }
 
