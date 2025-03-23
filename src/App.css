@@ -75,11 +75,11 @@
   font-family: 'Gmarket Sans', sans-serif;
   font-weight: 700;
   font-size: clamp(13px, 1.1vw, 22px);
-  line-height: 5vw;
+  line-height: 7vw;
   position: absolute;
   text-align: right;
   right: max(11vw, 20px);
-  top: 420px;
+  top: 430px;
   width: clamp(220px, 20vw, 350px);
 }
 
@@ -97,7 +97,7 @@
 .project-button-container {
   display: flex;
   justify-content: center;
-  margin-top: 2050px;
+  margin-top: 2030px;
   margin-bottom: 40px;
 }
 
