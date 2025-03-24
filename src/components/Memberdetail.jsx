@@ -15,50 +15,82 @@ const memberData = [
   {
     name: "강현승",
     image: member1,
-    role: "팀장",
-    description: "인공지능학과 2024년도 회장출신",
+    role: "Leader, AI, Backend",
+    description: "MBTI: ESTJ",
+    description1: "생년월일: 2002.09.10",
+    description2: "전공: 인공지능전공",
+    description3: "Skill: Python, C, Java",
+    description4: "인공지능학과의 기초를 다진 남자",
   },
   {
     name: "김현지",
     image: member2,
-    role: "백엔드",
-    description: "Spring Boot 에이스",
+    role: "Backend, Infra",
+    description: "MBTI: ISFP",
+    description1: "생년월일: 2002.09.10",
+    description2: "전공: 인공지능전공",
+    description3: "Skill: SpringBoot, C, Java, Python, Kotlin",
+    description4: "우리팀의 Backend 에이스",
   },
   {
     name: "문승주",
     image: member3,
-    role: "백엔드, 인프라",
-    description: "네 좋습니다. 저만 믿고 따라오면 됩니다",
+    role: "Backend, Infra",
+    description: "MBTI: ESFJ",
+    description1: "생년월일: 1999.06.05",
+    description2: "전공: 컴퓨터공학전공",
+    description3: "Skill: SpringBoot, Java, Docker, SpringCloud, AWS",
+    description4: "네 좋습니다. 저만 믿고 따라오면 됩니다",
   },
   {
     name: "이경준",
     image: member4,
-    role: "프론트엔드",
-    description: "열심히 하겠습니다",
+    role: "Frontend",
+    description: "MBTI: ISFJ",
+    description1: "생년월일: 2001.02.24",
+    description2: "전공: 컴퓨터공학전공",
+    description3: "Skill: JavaScript, React, Flutter, Dart",
+    description4: "비행기 타고 보면 가천대 2.5cm",
   },
   {
     name: "김송희",
     image: member5,
-    role: "프론트엔드",
-    description: "총학생회 화이팅",
+    role: "Frontend",
+    description: "MBTI: INFP",
+    description1: "생년월일: 2004.05.09",
+    description2: "전공: 소프트웨어공학전공",
+    description3: "Skill: Python, Java, C, HTML",
+    description4: "총학생회 그만두고 싶어하는 것 같다",
   },
   {
     name: "이재모",
     image: member6,
-    role: "인프라",
-    description: "아직 취해본 적이 없는 개발자",
+    role: "Backend, Infra",
+    description: "MBTI: ISFP",
+    description1: "생년월일: 1999.02.11",
+    description2: "전공: 컴퓨터공학전공",
+    description3: "Skill: Python, Java, C",
+    description4: "아직 취해본 적이 없는 술톤 개발자",
   },
   {
     name: "조선현",
     image: member7,
-    role: "PM",
-    description: "목표는 3대 500치기",
+    role: "PM, Frontend, AI",
+    description: "MBTI: ISTJ",
+    description1: "생년월일: 2000.03.14",
+    description2: "전공: 소프트웨어공학전공",
+    description3: "Skill: Python, Java, C",
+    description4: "목표는 3대 500치기",
   },
   {
     name: "전준배",
     image: member8,
     role: "백엔드",
-    description: "엊그제 여행갔다온 복정 자취남",
+    description: "MBTI: ISTJ",
+    description1: "생년월일: 2000.03.14",
+    description2: "전공: 소프트웨어공학전공",
+    description3: "Skill: Python, Java, C",
+    description4: "목표는 3대 500치기",
   },
 ];
 
@@ -93,9 +125,13 @@ export const MemberDetail = () => {
           alt={member.name}
           className="member-detail-img"
         />
-        <h2>{member.name}</h2>
+        <h1>{member.name}</h1>
         <h4>{member.role}</h4>
+        <p>{member.description4}</p>
         <p>{member.description}</p>
+        <p>{member.description1}</p>
+        <p>{member.description2}</p>
+        <p>{member.description3}</p>
       </motion.div>
     </motion.div>
   );
