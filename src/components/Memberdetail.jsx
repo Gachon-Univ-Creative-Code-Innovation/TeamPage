@@ -85,12 +85,12 @@ const memberData = [
   {
     name: "전준배",
     image: member8,
-    role: "백엔드",
-    description: "MBTI: ISTJ",
-    description1: "생년월일: 2000.03.14",
-    description2: "전공: 소프트웨어공학전공",
-    description3: "Skill: Python, Java, C",
-    description4: "목표는 3대 500치기",
+    role: "Backend",
+    description: "MBTI: ISFP",
+    description1: "생년월일: 1999.09.01",
+    description2: "전공: 컴퓨터공학전공",
+    description3: "Skill: SpringBoot, Java",
+    description4: "오늘의 집 애용하는 복정 자취남",
   },
 ];
 
