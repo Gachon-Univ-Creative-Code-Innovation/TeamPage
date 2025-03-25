@@ -17,7 +17,7 @@ const memberData = [
     image: member1,
     role: "Leader, AI, Backend",
     description: "MBTI: ESTJ",
-    description1: "생년월일: 2002.09.10",
+    description1: "생년월일: 2001.04.29",
     description2: "전공: 인공지능전공",
     description3: "Skill: Python, C, Java",
     description4: "인공지능학과의 기초를 다진 남자",
