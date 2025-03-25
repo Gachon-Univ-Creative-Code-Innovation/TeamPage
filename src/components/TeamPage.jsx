@@ -67,7 +67,7 @@ export const TeamPage = () => {
         </div>
 
         <div className="member-title">
-          <h2>멤버 소개</h2>
+          <h2>Team Member</h2>
         </div>
 
         <div className="overlap">

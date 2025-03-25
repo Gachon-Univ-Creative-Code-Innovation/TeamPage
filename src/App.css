@@ -48,7 +48,8 @@
   position: absolute;
   left: 17vw;
   top: 10vw;
-  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 30px 50px rgba(0, 0, 0, 0.6);
+  filter: blur(2px);
   animation: toRight 1s ease-out;
 }
 
@@ -60,7 +61,8 @@
   position: absolute;
   right: 10vw;
   top: 30vw;
-  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 30px 50px rgba(0, 0, 0, 0.6);
+  filter: blur(1px);
   animation: toLeft 1.3s ease-out;
 }
 
@@ -70,7 +72,7 @@
   position: absolute;
   left: 7vw;
   top: 50vw;
-  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 30px 50px rgba(0, 0, 0, 0.4);
   animation: toRight 2s ease-out;
 }
 
@@ -194,11 +196,13 @@
   font-weight: bold;
   font-size: 18px;
   border-radius: 15px;
+  overflow: hidden;
 }
 
 .team-page .member-img:hover {
   transform: scale(1.15);
-  transition: transform 0.2s ease;
+  transition: transform 0.5s ease;
+  background-color: #789dbd; 
 }
 
 .element .member-img {
