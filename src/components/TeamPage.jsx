@@ -62,7 +62,7 @@ export const TeamPage = () => {
             className="project-button"
             onClick={() => navigate("/project")}
           >
-            프로젝트 소개
+            💻
           </button>
         </div>
 
@@ -71,7 +71,7 @@ export const TeamPage = () => {
         </div>
 
         <div className="overlap">
-          <div className="person">
+          <div className="person" >
             <div className="group">
               {memberImages.map((imgSrc, i) => (
                 <div

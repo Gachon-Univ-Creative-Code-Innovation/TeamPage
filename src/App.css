@@ -113,20 +113,17 @@
 }
 
 .project-button {
-  background-color: #00386b;
-  color: white;
-  font-family: 'Gmarket Sans', sans-serif;
-  font-size: 45px;
-  padding: 48px 48px;
+  background-color: #FFFFFF;
+  font-size: 150px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.2s ease;
+  animation: wiggle 2s infinite ease-in-out;
 }
 
 .project-button:hover {
-  background-color: #021f3e;
-  transform: scale(1.03);
+  transform: scale(2);
 }
 
 .member-title {
@@ -197,6 +194,7 @@
   font-size: 18px;
   border-radius: 15px;
   overflow: hidden;
+  
 }
 
 .team-page .member-img:hover {
@@ -353,5 +351,25 @@
   }
   to {
     transform: translateX(0);
+  }
+}
+
+
+@keyframes wiggle {
+  0%   { transform: rotate(0deg); }
+  15%  { transform: rotate(-5deg); }
+  30%  { transform: rotate(5deg); }
+  45%  { transform: rotate(-4deg); }
+  60%  { transform: rotate(4deg); }
+  75%  { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
