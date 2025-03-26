@@ -62,8 +62,9 @@ export const TeamPage = () => {
             className="project-button"
             onClick={() => navigate("/project")}
           >
-            💻
+            Take a look at our projects&nbsp;&nbsp;&nbsp;&nbsp;
           </button>
+      
         </div>
 
         <div className="member-title">

@@ -60,7 +60,7 @@ const memberData = [
     description1: "생년월일: 2003.05.09",
     description2: "전공: 소프트웨어전공",
     description3: "Skill: Python, Java, C, HTML",
-    description4: "총학생회 그만두고 싶어하는 것 같다",
+    description4: "우리팀 막냉이",
   },
   {
     name: "이재모",

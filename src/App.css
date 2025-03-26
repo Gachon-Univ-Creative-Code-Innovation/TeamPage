@@ -7,7 +7,7 @@
 
 .team-page .div {
   width: 100%;
-  height: 4000px;
+  height: 4300px;
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -105,6 +105,8 @@
   letter-spacing: 2px;
 }
 
+
+
 .project-button-container {
   display: flex;
   justify-content: center;
@@ -113,22 +115,32 @@
 }
 
 .project-button {
+  position: absolute;
+  font-weight: 1000;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 440px;
+  color: white;
+  -webkit-text-stroke: 2px #789dbd;
   background-color: #FFFFFF;
-  font-size: 150px;
   border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-  animation: wiggle 2s infinite ease-in-out;
+  white-space: nowrap;
+  z-index: 1;
+  animation: scroll-left 15s linear infinite;
 }
 
 .project-button:hover {
-  transform: scale(2);
+  transform: color 0.5s ease;
+  color: #00386b;
 }
+
+
+
 
 .member-title {
   text-align: center;
-  margin-top: 250px;
+  margin-top: 650px;
   margin-bottom: 10px;
   font-size: 2rem;
   font-weight: bold;
@@ -143,7 +155,7 @@
 
 .team-page .overlap {
   position: absolute;
-  top: 2900px;
+  top: 3200px;
   left: 0;
   width: 100%;
   height: 568px;
@@ -222,7 +234,7 @@
   background-color: #03182b;
   height: 200px;
   position: absolute;
-  top: 3800px;
+  top: 4100px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -272,11 +284,10 @@
 }
 
 .member-detail {
-  padding: 200px 0 80px;  /* 상단 200px, 하단 80px으로 변경 */
+  padding: 200px 0 80px;  
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  /* align-items: center; 이 줄은 제거 */
   background-color: #f6f6f6;
   font-family: 'Gmarket Sans', sans-serif;
   font-size: 25px;
@@ -299,7 +310,9 @@
   object-fit: cover;
   border-radius: 14px;
   margin-bottom: -35px;
+  animation: wiggle 2s infinite;
 }
+
 
 .project-detail {
   padding-top: 200px;
@@ -357,13 +370,24 @@
 
 @keyframes wiggle {
   0%   { transform: rotate(0deg); }
-  15%  { transform: rotate(-5deg); }
-  30%  { transform: rotate(5deg); }
-  45%  { transform: rotate(-4deg); }
-  60%  { transform: rotate(4deg); }
-  75%  { transform: rotate(-2deg); }
+  15%  { transform: rotate(-3deg); }
+  30%  { transform: rotate(3deg); }
+  45%  { transform: rotate(-2deg); }
+  60%  { transform: rotate(2deg); }
+  75%  { transform: rotate(-1deg); }
   100% { transform: rotate(0deg); }
 }
+
+@keyframes bigWiggle {
+  0%   { transform: scale(1.5) rotate(0deg); }
+  15%  { transform: scale(1.5) rotate(-5deg); }
+  30%  { transform: scale(1.5) rotate(5deg); }
+  45%  { transform: scale(1.5) rotate(-4deg); }
+  60%  { transform: scale(1.5) rotate(4deg); }
+  75%  { transform: scale(1.5) rotate(-2deg); }
+  100% { transform: scale(1.5) rotate(0deg); }
+}
+
 
 @keyframes bounce {
   0%, 100% {
@@ -371,5 +395,14 @@
   }
   50% {
     transform: translateY(-10px);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(15%);
+  }
+  100% {
+    transform: translateX(-120%);
   }
 }
